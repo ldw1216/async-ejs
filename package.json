@@ -2,11 +2,7 @@
   "name":"async-ejs",
   "ejs": "ejs@2.5.5",
   "repository": "git@github.com:ldw1216/async-ejs.git",
-  "author": {
-    "name": "Matthew Eernisse",
-    "email": "mde@fleegix.org",
-  },
-
+  "author": "liwei  ldw1216@foxmail.com",
   "dependencies": {},
   "description": " JavaScript templates async",
   "devDependencies": {
