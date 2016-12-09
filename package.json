@@ -35,5 +35,5 @@
     "lint": "eslint \"**/*.js\" Jakefile",
     "test": "mocha"
   },
-  "version": "0.1"
+  "version": 0.1
 }
