@@ -1,5 +1,5 @@
 {
-  name:"async-ejs",
+  "name":"async-ejs",
   "ejs": "ejs@2.5.5",
   "repository": "git@github.com:ldw1216/async-ejs.git",
   "author": {
