@@ -1,0 +1,82 @@
+{
+  "_from": "ejs@2.5.5",
+  "_id": "async-ejs@2.5.5",
+  "_inCache": true,
+  "_location": "/ejs",
+  "_nodeVersion": "6.9.1",
+  "_npmOperationalInternal": {
+    "host": "",
+    "tmp": ""
+  },
+  "_npmUser": {
+    "name": "liwei",
+    "email": "ldw1216@foxmail.com"
+  },
+  "_requested": {
+    "scope": null,
+    "escapedName": "async-ejs",
+    "name": "async-ejs",
+    "rawSpec": "2.5.5",
+    "spec": "2.5.5",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npm.taobao.org/ejs/download/ejs-2.5.5.tgz",
+  "_shasum": "6ef4e954ea7dcf54f66aad2fe7aa421932d9ed77",
+  "_shrinkwrap": null,
+  "_spec": "ejs@2.5.5",
+  "_where": "/Users/apple/WebstormProjects/templateEngine",
+  "author": {
+    "name": "Matthew Eernisse",
+    "email": "mde@fleegix.org",
+    "url": "http://fleegix.org"
+  },
+  "bugs": {
+    "url": ""
+  },
+  "dependencies": {},
+  "description": "Embedded JavaScript templates",
+  "devDependencies": {
+    "browserify": "^13.0.1",
+    "eslint": "^3.0.0",
+    "git-directory-deploy": "^1.5.1",
+    "istanbul": "~0.4.3",
+    "jake": "^8.0.0",
+    "jsdoc": "^3.4.0",
+    "lru-cache": "^4.0.1",
+    "mocha": "^3.0.2",
+    "uglify-js": "^2.6.2"
+  },
+  "directories": {},
+
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "homepage": "https://github.com/mde/ejs",
+  "keywords": [
+    "template",
+    "engine",
+    "ejs"
+  ],
+  "license": "Apache-2.0",
+  "main": "./asyncRenderEjs.js",
+  "name": "async-ejs",
+  "optionalDependencies": {},
+  "publish_time": 1481011537961,
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha",
+    "devdoc": "jake doc[dev]",
+    "doc": "jake doc",
+    "lint": "eslint \"**/*.js\" Jakefile",
+    "test": "mocha"
+  },
+  "version": "0.1"
+}
