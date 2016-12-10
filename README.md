@@ -25,7 +25,8 @@ res.asyncReader(filename,{User:mongoose.model('User')},{debug:true});
  
 3、模板里 
 ```html
-<%var user = yield User.findOne();%>  <%= user.name %>
+<%var user = yield User.findOne();%>  
+<%= user.name %>
 ```
 
 
