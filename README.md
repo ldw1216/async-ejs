@@ -2,7 +2,10 @@
 # async-ejs
 
 对ejs源码进行了改进，改进后可支持在模板上使用generator方法
-如：<%var user = yield User.findOne();%>  <%= user.name %>
+```html
+<%var user = yield User.findOne();%>  <%= user.name %>
+<%#User为路由端传过来的mongoose Model%>
+```
 
 ## Installation
 
@@ -17,7 +20,7 @@ app.use(require('async-ejs')());
 ```
 2、在express路由中使用
 ```javascript
-res.asyncReader(filename,data,opts);
+res.asyncReader(filename,{User:mongoose.model('User')},{debug:true});
 ```
  
 3、模板里 
@@ -28,7 +31,7 @@ res.asyncReader(filename,data,opts);
 
 
 
-# EJS 下面的是原ejs的文档(可与async-ejs一同使用)
+# 下面的是原ejs的文档(可与async-ejs一同使用)
 
 Embedded JavaScript templates
 
