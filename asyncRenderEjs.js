@@ -12,7 +12,7 @@ var path = require('path');
 module.exports = function(options={}){
     return function(req,res,next){
         var viewsPath = req.app.get('views') || path.join(process.cwd(),'views');
-        res.gnRender = function* (filename,data,opts){
+        res.gnRender = res.asyncRender = function* (filename,data,opts){
             if(!filename.includes('.ejs')) filename = filename+'.ejs';
             Object.assign(options,opts);
             yield ejs.renderFile(path.join(viewsPath,filename),data||{},options,function(err,doc){

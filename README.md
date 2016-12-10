@@ -1,18 +1,34 @@
 
+# async-ejs
 
-//对ejs源码进行了改进，改进后可支持在模板上使用generator方法，
-//如：<%var user = yield User.findOne();%>  <%= user.name %>
+对ejs源码进行了改进，改进后可支持在模板上使用generator方法
+如：<%var user = yield User.findOne();%>  <%= user.name %>
 
-使用方法：
-1、在express里加入中间件:app.use(require('./lib/ejs')({debug:true}));
-2、在路由中使用 res.asyncReader(filename,data,opts);
-3、模板里 <%var user = yield User.findOne();%>  <%= user.name %>
+## Installation
+
+```bash
+$ npm install https://github.com/ldw1216/async-ejs
+```
+
+##使用方法：
+1、在express里加入中间件:
+```javascript
+app.use(require('async-ejs')());
+```
+2、在express路由中使用
+```javascript
+res.asyncReader(filename,data,opts);
+```
+ 
+3、模板里 
+```html
+<%var user = yield User.findOne();%>  <%= user.name %>
+```
 
 
-//下面可以不用读了，下面的是原ejs的文档
 
 
-# EJS
+# EJS 下面的是原ejs的文档(可与async-ejs一同使用)
 
 Embedded JavaScript templates
 
