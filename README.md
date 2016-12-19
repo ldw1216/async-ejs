@@ -20,7 +20,7 @@ app.use(require('async-ejs')());
 ```
 2、在express路由中使用
 ```javascript
-res.asyncReader(filename,{User:mongoose.model('User')},{debug:true});
+yield yield res.asyncRender(filename,{User:mongoose.model('User')},{debug:true});
 ```
  
 3、模板里 
